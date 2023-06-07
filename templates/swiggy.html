@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local method</title>
+    <link rel="stylesheet" href="../practice/css/mdb.min.css">
+    <link rel="stylesheet" href="../practice/css/mdb.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      img
+      {
+        border-radius: 100% !important;
+        height:100px !important;
+      }
+    </style>
+
+
+
+</head>
+<body>
+  <div class="container-fluid" >
+    <div class="row">
+        <div class="col">
+            <h2 class="text-warning">swiggy cart:</h2>
+            <p> Swiggy is an Indian online food ordering and delivery platform.<br>
+               Founded in 2014, Swiggy is based in Bangalore and operates in 500 Indian cities as of September 2021.[5][6] Besides food delivery, Swiggy also provides on-demand grocery deliveries under the name Instamart, and a same-day package delivery service called Swiggy Genie.
+
+            </p>
+            <button class="btn btn-warning btn-md">Order Now</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <table class="table table-stripped">
+          <thead class="btn-warning text-dark text-center">
+            <tr>
+              <th>S.no</th>
+              <th>Image</th>
+              <th>Item Name</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>total price</th>
+            </tr>
+
+          </thead>
+          <tbody class="table-warning text-center text-dark">
+            <tr>
+              <td>1</td>
+              <td><img src="https://www.watchwhatueat.com/wp-content/uploads/2016/10/Easy-Vegetable-Biryani-Featured-1.jpg" class="img-circle"></td>
+              <td>Veg Biryani</td>
+              <td>299.00</td>
+              <td>
+                <i class="fa fa-minus-circle pr-2" id="dec" ></i>
+                <span id="count"></span>
+                <i class="fa fa-plus-circle pl-2" id="inc"></i>
+              </td>
+              <td>299.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="https://c.ndtvimg.com/2020-12/gsb6apq_biryani_625x300_23_December_20.jpg" class="img-circle"></td>
+              <td>Dum Biryani</td>
+              <td>300.00</td>
+              <td>
+                <i class="fa fa-minus-circle pr-2" id="dec"></i>
+                <span id="count">0</span>
+                <i class="fa fa-plus-circle pl-2" id="inc"></i>
+              </td>
+              <td>299.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="https://www.jocooks.com/wp-content/uploads/2012/03/tandoori-chicken-1-11-500x500.jpg" class="img-circle"></td>
+              <td>tandoori chicken</td>
+              <td>299.00</td>
+              <td>
+                <i class="fa fa-minus-circle pr-2"></i>
+                <span>0</span>
+                <i class="fa fa-plus-circle pl-2"></i>
+              </td>
+              <td>299.00</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2014/11/paneer-butter-masala-recipe-2.jpg" alt=""></td>
+              <td>paneer butter masala</td>
+              <td>299.00</td>
+              <td>
+                <i class="fa fa-minus-circle pr-2"></i>
+                <span>0</span>
+                <i class="fa fa-plus-circle pl-2"></i>
+    
+
+              </td>
+              <td>299.00</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <script>
+      let ibtn=document.querySelector('#dec')
+      let ibtn2=document.querySelector('#inc')
+      let spanTag=document.querySelector('#count')
+      let count=0
+      spanTag.innerText=count;
+      ibtn.addEventListener('click',decrement)
+      ibtn2.addEventListener('click',increment)
+      function increment()
+      {
+        count++;
+        spanTag.innerText=count;
+      }
+      function decrement()
+      {
+        if (count>0)
+        {
+          count--;
+          spanTag.innerText=count;
+        } 
+        else
+        {
+          spanTag.innerText=1;
+        }
+      }
+
+    </script> 
+</body>
+</html>

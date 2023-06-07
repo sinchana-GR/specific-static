@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>registration form</title>
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGJCkYBR47og1n8kXHrYoWTK4t3tIy7xkbiCbGaBEtajsVjWcSNQg6mWEzRY46ce-FnA&usqp=CAU "/>
+</head>
+<body>
+    <div id="reg-form">
+        <div id="icon">
+        <a href=""><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+    <form>
+        <div id="form-group">
+            <input type="text" placeholder="enter username">
+        </div>
+        <div id="form-group">
+            <input type="text" placeholder="enter email">
+        </div>
+        <div id="form-group">
+            <input type="password" placeholder="enter password">
+        </div>
+       
+        <div id="form-group">
+            <input type="password" placeholder="enter confirm password">
+        </div>
+        <div id="form-group">
+            <textarea placeholder="description"></textarea>
+        </div>
+        <div id="form-group">
+            <select>
+                <option value="">select designation</option>
+                <option value="">team lead</option>
+                <option value="">team manager</option>
+                <option value="">software developer</option>
+            </select>
+        </div>
+        <div id="form-group">
+            <input type="submit" value="signup">
+
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

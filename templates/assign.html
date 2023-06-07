@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/form2.css' %}">
+</head>
+<body>
+    <h2 style="text-align: center;">ONLINE JOB APPLICATION FORM</h2>
+    <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+            <form>
+                <table>
+                    <tr>
+                        <td><label>FIRST NAME:</label></td>
+                        <td><input type="text"></td>
+                        
+                        <td><label>MIDDLE NAME:</label></td>
+                        <td><input type="text"></td>
+                        
+                        <td><label>LAST NAME:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>FATHER NAME:</label></td>
+                        <td><input type="text"></td>
+                        
+                        <td><label>MOTHER NAME:</label></td>
+                        <td><input type="text"></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td><label>PHONE NUMBER:</label></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>LANDLINE NUMBER:</label></td>
+                        <td><input type="tel" maxlength="10" minlength="10"></td>
+                        
+                        <td><label>MOBILE NUMBER:</label></td>
+                        <td><input type="tel" maxlength="10" minlength="10"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>DOB:</label></td>
+                        <td><input type="date"></td>
+                        
+                        <td><label>PLACE OF BIRTH:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>GENDER:</label></td>
+                        <td><input type="radio" name="asd">MALE</td>
+                        <td><input type="radio" name="asd">FEMALE</td>
+                    </tr>
+                    <tr>
+                        <td><label>HIGHEST QUALIFICATION:</label></td>
+                        <td><select><option>--Select--</option>
+                                    <option>Ph.d</option>
+                                    <option>post graduation</option>
+                                    <option>under graduation</option>
+                                    <option>12th</option>
+                                    <option>10th</option></select></td>
+                                    
+                        <td><label>YEAR OF PASSING:</label></td>
+                        <td><input type="month"></td>
+                    </tr>
+                        <tr>
+                            <td>LANGUAGES KNOWN:</td>
+                            <td><input type="checkbox">KANNADA</td>
+                            <td><input type="checkbox">HINDI</td>
+                            <td><input type="checkbox">ENGLISH</td>
+                        </tr>
+
+                     <tr>
+                            <td>HOBBIES:</td>
+                            <td><input type="checkbox">BATMENTON</td>
+                            
+                            <td><input type="checkbox">CODING</td>
+                            
+                            <td><input type="checkbox">CYCLING</td>
+                        </tr>
+                        <tr>
+                            <td><label>ABOUT YOURSELF:</label></td>
+                            <td><textarea  cols="25" rows="5" placeholder="ENTER YOUR ADDRESS"></textarea></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label>NATIONALITY:</label></td>
+                            <td><select><option>--select--</option>
+                                        <option>India</option>
+                                        <option>AMERICA</option>
+                                        <option>Britan</option>
+                                        <option>Japan</option>
+                                        <option>China</option>
+                                        <option>Others</option></select></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label>AADHAR CARD NUMBER:</label></td>
+                            <td><input type="tel" minlength="12" maxlength="12"></td>
+                            
+                            <td><label>PANCARD NUMBER:</label></td>
+                            <td><input type="password" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="5 uppercase, 4 numbers, 1 uppercase"></td>
+                        </tr>
+                </table>
+            </form>
+    </fieldset><br>
+    <fieldset>
+        <legend>EDUCATION DETAILS</legend>
+        <form>
+            <table>
+                <tr>
+                     <td>S.NO</td>
+                     
+                     <td>QUALIFICATION</td>
+                     
+                     <td>INSTITUTE/UNIVERSITY</td>
+                     
+                     <td>YEAR OF PASSING</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    
+                    <td><input type="text"></td>
+                    
+                    <td><input type="text"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                
+                    <td><input type="text"></td>
+                
+                    <td><input type="text"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    
+                    <td><input type="text"></td>
+                    
+                    <td><input type="text"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    
+                    <td><input type="text"></td>
+                    
+                    <td><input type="text"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset><br>
+    <fieldset>
+        <legend>WORK EXPERIENCE</legend>
+        <form>
+            <table>
+                <tr>
+                    <td>S.NO</td>
+                    
+                    <td>COMPANY</td>
+                    
+                    <td>WORK/ROLES</td>
+                    
+                    <td>FROM DATES</td>
+                    
+                    <td>TO DATE</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    
+                    <td><textarea  rows="5" cols="25"></textarea></td>
+                    
+                    <td><textarea  cols="25" rows="5"></textarea></td>
+                    
+                    <td><input type="date"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    
+                    <td><textarea  rows="5" cols="25"></textarea></td>
+                    
+                    <td><textarea  cols="25" rows="5"></textarea></td>
+                    
+                    <td><input type="date"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    
+                    <td><textarea  rows="5" cols="25"></textarea></td>
+                    
+                    <td><textarea  cols="25" rows="5"></textarea></td>
+                    
+                    <td><input type="date"></td>
+                    
+                    <td><input type="date"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset><br>
+    <fieldset>
+        <legend>OTHER DETAILS</legend>
+        <form>
+            <table>
+                <tr>
+                    <td><label>JOB TYPE:</label></td>
+                    
+                    <td><input type="radio" name="asd">PERMANENT</td>
+                    
+                    <td><input type="radio" name="asd">CONTRACT</td>
+                    
+                    <td><input type="radio" name="asd">OTHER</td>
+                </tr>
+                <tr>
+                    <td><label>DATE OF JOINING:</label></td>
+                    
+                    <td><input type="date"></td>
+                    
+                    <td><label>TIME OF JOINING:</label></td>
+                    
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>PREFER JOB LOCATION:</label></td>
+                    
+                    <td><input type="radio" name="asd">BANGALORE</td>
+                    
+                    <td><input type="radio" name="asd">MYSORE</td>
+                    
+                    <td><input type="radio" name="asd">OTHER</td>
+                </tr>
+                <tr>
+                    <td><label>WILLING TO RELOCATE MYSORE:</label></td>
+                    
+                    <td><input type="radio" name="asd">YES</td>
+                    
+                    <td><input type="radio" name="asd">NO</td>
+                </tr>
+                <table>
+                <tr>
+                    <td><input type="radio">: I AM HERE DECLARING THAT ALL THE ABOVE MENTIONED INFORMATION IS TRUE AS PEER MY KNOWLEDGE</td>
+                </tr>
+                <tr>
+                
+                    <td style="text-align: center;"><button>SUBMIT</button> <button>RESET</button></td>
+                    
+                    
+                </tr>
+                
+            </table>
+                
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
+</body>
+</html>

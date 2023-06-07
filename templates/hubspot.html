@@ -1,0 +1,271 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUBSPOT ASSIGNMENTS
+        
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">       
+     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color:white;
+            height: 30px;
+            width: 100%;
+        }
+        #im1{
+            margin-left: 50px;
+            height: 15px;
+            width: 80px;
+        }
+        section{
+            height: 400px;
+        }
+        #im2{
+            height: 400px;
+            width: 100%;
+        }
+        #div1{   
+            width: 500px;
+            color: ghostwhite;
+            margin-top: -250px;
+            margin-left: 500px;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            position: relative;
+        }
+        #s1{
+            font-size: 30px;
+          }
+        #s2{
+           font-size: 30px;
+            margin-left: 150px;
+        }
+        p{
+            justify-content: center;
+            text-indent: 30px;
+            line-height: 15px;
+        }
+        #s3{
+            margin-left: 200px;
+        }
+        #div2{
+            height: 500px;
+            width: 1200px;
+            background-color: white;
+            margin-left: 50px;
+            position: absolute;
+            margin-top:60px;
+            line-height: 40px;
+        }
+        #div3{
+           height: 180px;
+           width: 500px;
+           margin-left: 20px;
+           margin-top: 15px;
+           background-color: whitesmoke;
+           
+        }
+        #div4{
+           height: 350px;
+           float: left;
+           width: 650px;
+           float: right;
+           margin-right: 10px;
+           margin-top: -180px;
+           background-color: whitesmoke;
+           font-size: 12px;
+        }
+        #div5{
+           height: 180px;
+           width: 500px;
+           float: left;
+           margin-left: 20px;
+           margin-top: 15px;
+           background-color: whitesmoke;
+        }
+        #c1{
+            float: left;
+            height: 100px;
+            width: 60px;
+            margin-top: 45px;
+        }
+        #c2{
+            float: left;
+            height: 100px;
+            width: 200px;
+            margin-top:30px;
+            margin-left: 25px;
+        }
+        .bi{
+          color: rgb(206, 113, 21);
+          font-size: 40px;
+          margin-left: 27px;
+        }
+        #s4{
+            font-size: 20px;
+        }
+        #s5{
+            font-size: 20px;
+            color:rgb(28, 146, 219);
+            font-weight: bolder;
+        }
+        #s6{
+            font-size:15px;
+            color:rgb(51, 160, 228);
+        }
+        #c3{
+            float: left;
+            height: 100px;
+            width: 60px;
+            margin-top: 42px;
+        }
+        #c4{
+            float: left;
+            height: 100px;
+            width: 200px;
+            margin-top:30px;
+            margin-left: 25px;
+        }
+        #s7{
+            font-size: 15px;
+        }
+        button{
+            background-color: rgb(70, 70, 226);
+            border: none;
+            height: 35px;
+            color: ghostwhite;
+        }
+        h1{
+            margin-left: 250px;
+        }
+        label{
+            margin-left: 120px;
+            font-size: 15px;
+        }
+        input{
+            width: 200px;
+            margin-left: 50px;
+            height: 20px;
+        }
+        form{
+            height: 200px;
+            width: 200px;
+            line-height: 25px;
+        }
+        #id1{
+            background-color: blue;
+            margin-left: 250px;
+        }
+        #s10{
+            margin-left: 40px;
+        }
+        #s11{
+            margin-left: 250px;
+            font-size: 15px;
+        }
+        select{
+            height: 30px;
+            margin-left: 50px;
+            width: 468px;
+        }
+        
+    </style>
+</head>
+<body> 
+    <header>
+        HubSpot
+    </header>
+    <section>
+        <img src="{% static 'images/laptop.jpg' %}" alt="" id="im2">
+        <div id="div1">
+            <span id="s1">CONTACT US ABOUT HUBSPOT'S</span><br>
+            <span id="s2">SOFTWARE</span><br>
+            <p>
+                we'd love to show you how you can get more traffic and leads .increase your sales <br>
+                productivity. provide better customer service,or all of the above! Here are few ways <br>
+                to reach out to our sales team.
+                 <br><span id="s3"> perspiciatis porro?</span>
+            </p>
+        </div>
+        <div id="div2">
+            <div id="div3">
+                <div id="c1">
+                    <i class="bi bi-p-circle"></i>
+                </div>
+                <div id="c2">
+                    <span id="s4">Call us directly at</span><br>
+                   <span id="s5">+353&nbsp;&nbsp;1&nbsp;&nbsp;512&nbsp;&nbsp;4400</span><br>
+                    <span id="s6">See all numbers and locations</span>
+                </div>
+            </div>
+            <div id="div4">
+                 <h1>Book a Meeting</h1>
+                 <p id="p1">
+                    To schedule time to speak with our sales representatives,complete 
+                to the form ,then click 'next' to choose a date and time taht works for you </span>
+                 </p>
+                 <div id="div6">
+                    <form action="">
+                        <table cellpadding="0"> 
+                            <tr>
+                               <td><label for="">First Name <span>*</span></label></td>
+                                <td><label for="">Last Name <span>*</span></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                               <td><label for="">Email <span>*</span></label></td>
+                               <td><label for="">Phone Number<span>*</span></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Comapany Name</label></td>
+                                <td><label for="">Confirm Name</label></td>
+                             </tr>
+                             <tr>
+                                 <td><input type="text"></td>
+                                 <td><input type="text"></td>
+                             </tr>
+                             <tr>
+                                <td colspan="3">
+                                    <span id="s11"> Country:</span>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td colspan="3">
+                                    <select name="" id="">
+                                    <option value="">Please Select</option>
+                                    </select>
+                                </td>
+                             </tr>
+                        </table>
+                     </form>
+                 </div>
+            </div>
+
+            <div id="div5">
+                 <div id="c3">
+                    <i class="bi bi-wechat"></i>
+                  </div>
+                  <div id="c4">
+                      <span id="s7"> Chat with our sales team</span><br>
+                      <button>CHAT WITH SALES</button>
+                  </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>touch</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+       body{
+           background-color: black;
+           color: black;
+       }
+       div{
+           margin: 100px 0 0 300px;
+           width: 200px;
+           display: grid;
+           grid-template-columns:repeat(3,100px) ;
+           grid-template-rows:repeat(3,40px) ;
+           grid-gap: 20px;
+           grid-template-areas:
+           "navbar navbar"
+           "section section"
+           "aside aside"
+           "aside aside";
+       }
+       div>header{
+           grid-area: header;
+           background-color: ghostwhite;
+       }
+       div>nav{
+           background-color:ghostwhite ;
+           width: 220px;
+           padding: 0 0 170px 50px;
+           
+        
+       }
+       div>section{
+           grid-area:section ;
+           background-color: ghostwhite;
+       }
+       div>aside{
+           grid-area: aside;
+           background-color: ghostwhite;
+       }
+       header{
+           text-align: center;
+           
+       }
+       div>{
+           background-color: ghostwhite;
+           grid-area: header;
+       }
+       div>header{
+           grid-area: navbar;
+           background-color: ghostwhite;
+       }
+       label{
+           color: ghostwhite;
+           text-align: center;
+           background-color: red;
+           margin: 100px 0 0 500px;
+           padding: 3px;
+       }
+       a{
+           color: ghostwhite;
+           text-decoration: none;
+       }
+
+       
+   </style>
+</head>
+<body>    
+    <header><h1 style="color: ghostwhite;">GET IN TOUCH</h1> <br>
+
+     <a href=""><i class="fa-solid fa-phone"></i>phone:+2(02)27376756</a><br>
+     <a href=""><i class="fa-solid fa-envelope"></i>email: <span> hamdy.mostafa@legaliacorp.com</span> </a><br>
+     <a href=""><i class="fa-sharp fa-solid fa-location-dot"></i>Address:18 mamoud Azmy street,off 26th july street,zamalek,cairo,egypt.</a>
+     </header>
+     <div>
+     <header style="text-align: left;">heading</header>
+     <nav>navbar <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione dicta voluptas fuga, labore ullam nobis odio quod, pariatur aperiam qui quos earum error soluta, corrupti culpa quidem quisquam aliquam!</p></nav>
+     <section>section</section>
+     <aside>aside</aside>
+     
+    
+    </div><br>
+    <label for="message">SEND MESSAGE</label>
+</body>
+</html>

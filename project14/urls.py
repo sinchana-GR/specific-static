@@ -21,4 +21,13 @@ from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('specific_static/',specific_static,name='specific_static'),
+    path('music_waves/',music_waves,name='music_waves'),
+    path('swiggy/',swiggy,name='swiggy'),
+    path('assign/',assign,name='assign'),
+    path('assignment_form/',assignment_form,name='assignment_form'),
+    path('html_form/',html_form,name='html_form'),
+    path('hubspot/',hubspot,name='hubspot'),
+    path('opendoors/',opendoors,name='opendoors'),
+    path('touch/',touch,name='touch'),
+
 ]
